@@ -30,6 +30,10 @@
 .pub/
 /build/
 
+# Android and iOS directories
+/android/
+/ios/
+
 # Web related
 lib/generated_plugin_registrant.dart
 
