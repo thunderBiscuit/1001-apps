@@ -14,33 +14,84 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Container(
-                width: 100,
-                color: Colors.red,
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('images/fox.jpg'),
               ),
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-                      height: 100,
-                      width: 100,
-                      color: Colors.yellow,
-                    ),
-                    Container(
-                      height: 100,
-                      width: 100,
-                      color: Colors.green,
-                    ),
-                  ],
+              Text(
+                'thunderbiscuit',
+                style: TextStyle(
+                  fontFamily: 'ShareTechMono',
+                  fontSize: 30,
+                  color: Colors.white,
                 ),
               ),
-              Container(
-                width: 100,
-                color: Colors.blue,
+              Text(
+                'SOFTWARE DEVELOPER',
+                style: TextStyle(
+                  fontFamily: 'SourceSansPro',
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(
+                height: 42,
+                width: 270,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                child: Padding(
+                  padding: EdgeInsets.all(4),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      size: 30,
+                      color: Colors.teal.shade700,
+                    ),
+                    title: Text(
+                      '1-800-111-2222',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'SourceSansPro',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 25,
+                ),
+                child: Padding(
+                  padding: EdgeInsets.all(4),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      size: 30,
+                      color: Colors.teal.shade700,
+                    ),
+                    title: Text(
+                      'thunderb@protonmail.com',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'SourceSansPro',
+                      ),
+                    ),
+                  ),
+                ),
               ),
             ],
           ),
